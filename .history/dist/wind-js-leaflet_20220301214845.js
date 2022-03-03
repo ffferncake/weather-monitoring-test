@@ -874,7 +874,7 @@ L.control.windPosition = function (options) {
 
 			console.log('using local data..');
 
-			$.getJSON('/latest', function (data) {
+			$.getJSON('demo.json', function (data) {
 				WindJSLeaflet._data = data;
 				WindJSLeaflet._initWindy(data);
 			});

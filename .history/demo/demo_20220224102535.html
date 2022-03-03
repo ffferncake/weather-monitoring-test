@@ -1,0 +1,48 @@
+<!-- https://github.com/danwild/wind-js-leaflet -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WindJS (ESRI) Leaflet Demo</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="openweathermap-widget-13"></div>
+    <!--vendor-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://npmcdn.com/leaflet@1.0.3/dist/leaflet.css"
+    />
+    <script src="https://npmcdn.com/leaflet@1.0.3/dist/leaflet.js"></script>
+
+    <!--wind-js-leaflet-->
+    <link rel="stylesheet" href="/dist/wind-js-leaflet.css" />
+    <script src="/dist/wind-js-leaflet.js"></script>
+
+    <!--demo-->
+    <link rel="stylesheet" href="demo.css" />
+    <script src="demo.js"></script>
+    <div id="openweathermap-widget-12"></div>
+    <script>
+      window.myWidgetParam ? window.myWidgetParam : (window.myWidgetParam = []);
+      window.myWidgetParam.push({
+        id: 12,
+        cityid: "1609350",
+        appid: "152118f99e361e7816ebd28eb775a6c6",
+        units: "metric",
+        containerid: "openweathermap-widget-12",
+      });
+      (function () {
+        var script = document.createElement("script");
+        script.async = true;
+        script.charset = "utf-8";
+        script.src =
+          "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(script, s);
+      })();
+    </script>
+  </body>
+</html>

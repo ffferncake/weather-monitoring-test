@@ -24,7 +24,9 @@
     "url": "https://github.com/danwild/wind-js-leaflet/issues"
   },
   "homepage": "https://github.com/danwild/wind-js-leaflet#readme",
-  "dependencies": {},
+  "dependencies": {
+    "wind-js-server": "file:server/wind-js-server"
+  },
   "devDependencies": {
     "babel-preset-es2015": "^6.9.0",
     "gulp": "^3.9.1",

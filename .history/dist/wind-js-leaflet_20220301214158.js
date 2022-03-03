@@ -874,7 +874,7 @@ L.control.windPosition = function (options) {
 
 			console.log('using local data..');
 
-			$.getJSON('/latest', function (data) {
+			$.getJSON('https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/16.158/lat/58.5812/data.json', function (data) {
 				WindJSLeaflet._data = data;
 				WindJSLeaflet._initWindy(data);
 			});

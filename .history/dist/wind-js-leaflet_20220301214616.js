@@ -874,7 +874,7 @@ L.control.windPosition = function (options) {
 
 			console.log('using local data..');
 
-			$.getJSON('/latest', function (data) {
+			$.getJSON('api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=152118f99e361e7816ebd28eb775a6c6', function (data) {
 				WindJSLeaflet._data = data;
 				WindJSLeaflet._initWindy(data);
 			});

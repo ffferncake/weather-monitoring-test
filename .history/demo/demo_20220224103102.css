@@ -15,10 +15,13 @@ a {
 }
 
 #map {
-    position: absolute;
+    /* position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #333;
+    background-color: #333; */
+    height: 100%;
+  margin: 0px;
+  padding: 0px
 }
 
 
